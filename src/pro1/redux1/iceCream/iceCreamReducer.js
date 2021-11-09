@@ -1,4 +1,4 @@
-import { BUY_ICE_CREAM } from "./iceCreamTypes"
+import { ADD_ICE_CREAM, BUY_ICE_CREAM } from "./iceCreamTypes"
 
 const initialState = {
     numOfIceCreams : 15
@@ -11,8 +11,13 @@ const iceCreamReducer = (state=initialState, action) => {
                 ...state,
                 numOfIceCreams: state.numOfIceCreams - 1
             }
+        case ADD_ICE_CREAM:
+            return {
+                ...state,
+                numOfIceCreams: state.numOfIceCreams + 1
+            }
 
-            default: return state
+        default: return state
     }
 }
 
