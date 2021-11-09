@@ -1,4 +1,4 @@
-import { ADD_ICE_CREAM, BUY_ICE_CREAM } from "./iceCreamTypes"
+import { ADD_ICE_CREAM, BUY_ICE_CREAM, RESET_ICE_CREAMS } from "./iceCreamTypes"
 
 export const buyIceCream=()=>{
     return {
@@ -9,5 +9,11 @@ export const buyIceCream=()=>{
 export const addIceCream=()=>{
     return {
         type: ADD_ICE_CREAM
+    }
+}
+
+export const resetIceCreams=()=>{
+    return {
+        type: RESET_ICE_CREAMS
     }
 }
